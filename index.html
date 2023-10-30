@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <style>
+      .container {
+        width: 468px;
+        margin: auto;
+        margin-top: 10rem;
+      }
+
+      .form {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+      }
+      .form button {
+        background-color: green;
+        color: white;
+      }
+      .form button.delete-all {
+        background-color: blue;
+        color: white;
+      }
+
+      .list {
+        padding: 1rem 0;
+      }
+
+      .list .todo {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      .list .todo .delete {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input type="text" placeholder="Write your todo..." id="title" />
+        <button id="save-btn">Save</button>
+        <br /><br />
+        Delete checked items:
+        <button class="delete-all">Delete all</button>
+        <br /><br />
+        Status:
+        <select>
+          <option value="done">Done</option>
+          <option value="todo">Todo</option>
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="list">
+        <!-- <div class="todo">
+          <input type="checkbox" />
+          <span>Item 1</span>
+        </div>
+-->
+
+        <!-- <div class="todo">
+          <input type="checkbox" />
+          <span>Item 2</span>
+          <button class="delete">Delete</button>
+        </div> -->
+      </div>
+    </div>
+
+    <script type="module" src="./todo.js"></script>
+  </body>
+</html>
